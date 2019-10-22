@@ -20,7 +20,7 @@ export default class Sidebar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">          
           <Nav className="mr-auto flex-column-sm">
             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-            <Nav.Link href="/publicadores">Publicadores</Nav.Link>
+            <Nav.Link href="/publicadoresBar">Publicadores</Nav.Link>
             <Nav.Link href="/designacoes">Designacoes</Nav.Link>
           </Nav>
         </Navbar.Collapse>        

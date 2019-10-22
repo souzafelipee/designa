@@ -10,15 +10,14 @@ const PublicadorSchema = new mongoose.Schema({
     },
     leitor: Boolean,
     ativo: Boolean,
-    dataUltimaParte: Date,
     ultimaParte: Date,
     ultimaPresidencia: Date,
-    ultimaOraçãoInicial: Date,
+    ultimaOracaoInicial: Date,
     ultimoTesouros: Date,
     ultimoJoias: Date,
     ultimaPresidenciaSalaB: Date,
-    ultimoNossaVidaEMinistério: Date,
-    utimoEstudoBiblico: Date,
+    ultimoNossaVidaEMinisterio: Date,
+    ultimoEstudoBiblico: Date,
     ultimaLeituraEB: Date,
     ultimaOracaoFinal: Date
 });

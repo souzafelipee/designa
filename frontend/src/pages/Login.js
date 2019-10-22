@@ -27,11 +27,11 @@ export default class Login extends Component {
     }
     render() {
         return (
-            <Container classname="">
-                <Row className="justify-content-center text-center">
+            <Container>
+                <Row className="text-center">
                     <Col xs={10} sm={6} md={4} className="centraliza">
                         <Image src={designalogo} alt='Designa' fluid/>
-                        <form onSubmit={this.handleSubmit} classname="">
+                        <form onSubmit={this.handleSubmit}>
                             <Form.Group controlId="formBasicEmail" >
                                 <Form.Control type="username" placeholder="Usuario" value={this.state.username} onChange={this.handleInputChange}/>
                             </Form.Group>

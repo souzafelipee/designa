@@ -1,6 +1,6 @@
 .centraliza{
     position: absolute;
     left: 50%;
-    top: 25%;
-    transform:  translate(-50%,-25%) 
+    top: 100px;
+    transform:  translate(-50%,-0%) 
 }
