@@ -24,5 +24,59 @@ module.exports = {
         console.log('BackEnd: to tentando')
         const publicador = await Publicador.findByIdAndUpdate(req.params.id,req.body);
         return res.json(publicador);
+    },
+    async designacaoPubl(req, res){
+        const publicadores = await Publicador.find({privilegio: [req.params.filtro1]}).sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async designacaoPubl2(req, res){
+        const publicadores = await Publicador.find({privilegio: [req.params.filtro1,req.params.filtro2]}).sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async designacaoPubl3(req, res){
+        const publicadores = await Publicador.find().sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async ultimaDesignacao(req, res){
+        const publicadores = await Publicador.findOne({privilegio: [req.params.filtro1]}).sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async ultimaDesignacao2(req, res){
+        const publicadores = await Publicador.findOne({privilegio: [req.params.filtro1,req.params.filtro2]}).sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async ultimaDesignacao3(req, res){
+        const publicadores = await Publicador.findOne().sort('-ultimaParte');
+
+        return res.json(publicadores);
+    },
+    async ultimaParte(req, res){
+        var publicadores;
+        if (req.params.parte ==='Presidente') {
+            publicadores= await Publicador.findOne({privilegio: [req.params.filtro1]}).sort('-ultimaPresidencia');
+        }    
+
+        return res.json(publicadores);
+    },
+    async ultimaParte2(req, res){
+        var publicadores;
+        if (req.params.parte ==='Presidente') {
+            publicadores= await Publicador.findOne({privilegio: [req.params.filtro1,req.params.filtro2]}).sort('-ultimaPresidencia');
+        }    
+
+        return res.json(publicadores);
+    },
+    async ultimaParte3(req, res){
+        var publicadores;
+        if (req.params.parte ==='Presidente') {
+            publicadores= await Publicador.findOne().sort('-ultimaPresidencia');
+        }    
+
+        return res.json(publicadores);
     }
 };
