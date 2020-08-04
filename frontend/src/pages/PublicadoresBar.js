@@ -24,7 +24,7 @@ export default class Publicadores extends Component {
       <div>
           <Sidebar></Sidebar>
           <Container>
-                <Row className="justify-content-center text-center align-center j">
+                <Row className="justify-content-center text-center align-center ">
                     <Col bsPrefix="col-xs-1 col-sm-2">
                         <Button variant="primary"  href="/publicadores">+Novo</Button>
                     </Col>

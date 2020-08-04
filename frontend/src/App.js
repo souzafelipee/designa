@@ -6,6 +6,7 @@ import Designacoes from "./pages/Designacoes";
 import Publicadores from "./pages/Publicadores";
 import PublicadoresBar from "./pages/PublicadoresBar";
 import ListaPublicadores from "./components/ListaPublicadores";
+import SelPublicador from './pages/SelPublicador';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/designacoes" exact component={Designacoes}/>
           <Route path="/publicadoresBar" exact component={PublicadoresBar}/>
           <Route path="/listaPublicadores" exact component={ListaPublicadores}/>
+          <Route path="/SelPublicador" exact component={SelPublicador}/>
         </Switch>
       </BrowserRouter>
   );

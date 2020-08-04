@@ -21,7 +21,7 @@ export default class Sidebar extends Component {
           <Nav className="mr-auto flex-column-sm">
             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
             <Nav.Link href="/publicadoresBar">Publicadores</Nav.Link>
-            <Nav.Link href="/designacoes">Designacoes</Nav.Link>
+            <Nav.Link href="/designacoes">Designações</Nav.Link>
           </Nav>
         </Navbar.Collapse>        
        </Navbar>
